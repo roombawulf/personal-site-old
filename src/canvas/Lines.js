@@ -14,7 +14,7 @@ export default function Lines(){
         dash={1.0} 
         count={20} 
         radius={8} 
-        colors={['#AAEEFF', '#FFEEAA']}
+        colors={['#64FF95', '#F7F5EB']}
         />
     )
 }
@@ -27,8 +27,8 @@ function GenLines({ dash, count, colors, radius = 10, rand = THREE.MathUtils.ran
         const curve = new THREE.CatmullRomCurve3(points).getPoints(200)
         return {
             color: colors[parseInt(colors.length * Math.random())],
-            width: 0.1,//Math.max(radius / 200, (radius / 200) * Math.random()),
-            speed: Math.max(0.15, 0.15 * Math.random()),
+            width: 0.05,
+            speed: Math.max(0.10, 0.10 * Math.random()),
             curve: curve.flatMap((point) => point.toArray())
         }
         })
@@ -50,16 +50,14 @@ function Fatline({ curve, width, color, speed, dash }) {
         if (location.pathname === '/'){
             gsap.to(dash, {
                 dashRatio: "0.5",
-                lineWidth: "0.1",
-                duration: 1.5,
+                duration: 1.25,
                 ease: "power2.inOut"
             })
         }
         else{
             gsap.to(dash, {
                 dashRatio: "0.99",
-                lineWidth: "0.05",
-                duration: 1.5,
+                duration: 1.25,
                 ease: "power2.inOut"
             })
         }

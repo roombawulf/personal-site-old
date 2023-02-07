@@ -41,7 +41,6 @@
     "jest": "^27.4.3",
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
-    "leva": "^0.9.34",
     "meshline": "^3.1.6",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",

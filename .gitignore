@@ -1,13 +1,4 @@
 node_modules
 package-lock.json
 
-src/custom_modules/meshline/*
-!src/custom_modules/meshline/package.json
-!src/custom_modules/meshline/src
-!src/custom_modules/meshline/dist
-!src/custom_modules/meshline/LICENSE
-!src/custom_modules/meshline/README.md
-!src/custom_modules/meshline/tsconfig.json
-!src/custom_modules/meshline/vite.config.ts
-!src/custom_modules/meshline/yarn.lock
-!src/custom_modules/meshline/.prettierrc
+src/custom_modules/

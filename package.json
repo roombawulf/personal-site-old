@@ -42,7 +42,7 @@
     "jest-resolve": "^27.4.2",
     "jest-watch-typeahead": "^1.0.0",
     "leva": "^0.9.34",
-    "meshline": "file:src/custom_modules/meshline",
+    "meshline": "^3.1.6",
     "mini-css-extract-plugin": "^2.4.5",
     "postcss": "^8.4.4",
     "postcss-flexbugs-fixes": "^5.0.2",

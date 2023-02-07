@@ -11,13 +11,10 @@ extend({ MeshLineGeometry, MeshLineMaterial })
 export default function Lines(){
     return (
         <GenLines 
-        dash={0.5} 
+        dash={1.0} 
         count={20} 
         radius={8} 
-        colors={[
-            [new THREE.Color('#005f73'), new THREE.Color('#94d2bd')],
-            [new THREE.Color('#ee9b00'), new THREE.Color('#ae2012')]
-        ]} 
+        colors={['#AAEEFF', '#FFEEAA']}
         />
     )
 }
@@ -29,7 +26,7 @@ function GenLines({ dash, count, colors, radius = 10, rand = THREE.MathUtils.ran
         const points = Array.from({ length: 10 }, () => pos.add(new THREE.Vector3(rand(radius), rand(radius), rand(radius))).clone())
         const curve = new THREE.CatmullRomCurve3(points).getPoints(200)
         return {
-            color: colors[Math.floor(Math.random() * 2)],
+            color: colors[parseInt(colors.length * Math.random())],
             width: 0.1,//Math.max(radius / 200, (radius / 200) * Math.random()),
             speed: Math.max(0.15, 0.15 * Math.random()),
             curve: curve.flatMap((point) => point.toArray())
@@ -54,7 +51,7 @@ function Fatline({ curve, width, color, speed, dash }) {
             gsap.to(dash, {
                 dashRatio: "0.5",
                 lineWidth: "0.1",
-                duration: 1,
+                duration: 1.5,
                 ease: "power2.inOut"
             })
         }
@@ -62,7 +59,7 @@ function Fatline({ curve, width, color, speed, dash }) {
             gsap.to(dash, {
                 dashRatio: "0.99",
                 lineWidth: "0.05",
-                duration: 1,
+                duration: 1.5,
                 ease: "power2.inOut"
             })
         }
@@ -73,14 +70,12 @@ function Fatline({ curve, width, color, speed, dash }) {
         <meshLineMaterial 
         transparent 
         lineWidth={width} 
-        // color={color} 
+        color={color} 
         depthWrite={false}
         depthTest={false}
         dashArray={0.1} 
         dashRatio={dash} 
         toneMapped={false}
-        useGradient={1.0} 
-        gradient={color}
         />
     </mesh>
 

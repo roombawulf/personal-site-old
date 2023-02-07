@@ -1,0 +1,111 @@
+@import url(
+    'https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap'
+);
+
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+:root{
+    --darkblue: #151623;
+    --orange: #FDA769;
+    --offwhite: #F7F5EB;
+}
+
+html,
+body,
+#root{
+    height: 100%;
+    width: 100%;
+    margin: 0;
+
+    font-family: 'Mulish', sans-serif;
+    color: var(--offwhite);
+    background-color: var(--darkblue);
+}
+
+header {
+    position: relative;
+    z-index: 10;
+    height: fit-content;
+    padding: 1.0rem 1.5rem 1.0rem 1.5rem;
+    /* background-color: rgba(18, 18, 18, 0.8); */
+}
+
+.nav-container {
+    max-width: 960px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    justify-content: center;
+}
+
+.navlist {
+    display: flex;
+    gap: 1rem;
+
+}
+
+.navlink {
+    text-decoration: none;
+    color: var(--offwhite);
+
+    font-size: 1.5rem;
+    font-weight: 600;
+    border-bottom: solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.title{
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.hovered {
+    border-bottom: solid var(--orange);
+}
+
+@media screen and (max-width: 600px){
+    .navlink{
+        font-size: 1.0rem;
+    }
+    .title{
+        font-size: 1.5rem;
+    }
+}
+
+section{
+    max-width: 960px;
+    margin: auto;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.project-image{
+    width: 50%;
+    border-radius: 1rem;
+}
+.projects > article {
+    padding: 1.0rem 0rem 1.5rem 0rem;
+}
+.projects > article > * {
+    margin: 0
+}
+.projects > article > p {
+    padding: 1.0rem 0;
+}
+.projects > article > h4 {
+    font-style: italic;
+    font-weight: 600;
+
+    padding: 0.5rem 0rem;
+}
+.highlight{
+    color: var(--orange);
+}
+

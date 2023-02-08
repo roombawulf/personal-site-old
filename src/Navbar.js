@@ -15,6 +15,7 @@ export default function Navbar(){
         return () => window.removeEventListener('scroll', updateScroll)
     }, [])
 
+    console.log(scrollPos)
     return (
         <header className={scrollPos > 0 ? 'frosted' : ''}>
             <div className='nav-container'>

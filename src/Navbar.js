@@ -1,9 +1,22 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Link } from "react-router-dom"
 
 export default function Navbar(){ 
+
+    const [scrollPos, setScrollPos] = useState(0)
+
+    useEffect(() => {
+        const updateScroll = () => {
+            setScrollPos(window.scrollY)
+        }
+        window.addEventListener('scroll', updateScroll)
+
+        updateScroll()
+        return () => window.removeEventListener('scroll', updateScroll)
+    }, [])
+
     return (
-        <header>
+        <header className={scrollPos > 0 ? 'frosted' : ''}>
             <div className='nav-container'>
                 <Linky titleName='Haris // Raza.' to='/' className='navlink title' />
                 <nav className="navlist"> 

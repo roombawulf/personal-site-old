@@ -116,6 +116,14 @@ section{
 .projects > article > p {
     padding: 1.0rem 0;
 }
+.projects > article > h2 > a {
+    text-decoration: none;
+    color: var(--offwhite);
+    transition: color 0.5s;
+}
+.projects > article > h2 > a:hover {
+    color: var(--green);
+}
 .projects > article > h4 {
     font-style: italic;
     font-weight: 600;

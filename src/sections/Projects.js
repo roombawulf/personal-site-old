@@ -10,7 +10,9 @@ export default function Projects(){
         <AnimatePage>
             <section className='projects'>
                 <article>
-                    <h2>MSc Research - Deep Learning with Materials</h2>
+                    <h2><a href="https://drive.google.com/file/d/1Pnl2vaHC6JoPU4Sk65_t2tT9WwziSN1y/view?usp=sharing" target={'_blank'}>
+                        MSc Research - Deep Learning with Materials
+                    </a></h2>
                     {/* <h4>Python // PyTorch // Machine Learning</h4> */}
                     <h4><StyleWords words={['Python', 'Pytorch', 'Machine Learning']}/></h4>
                     <p>
@@ -19,7 +21,9 @@ export default function Projects(){
                     </p>
                 </article>
                 <article>
-                    <h2>Gerstner Waves Shader</h2>
+                    <h2><a href="https://gerstner-waves-shader.vercel.app/" target={'_blank'}>
+                        Gerstner Waves Shader
+                    </a></h2>
                     {/* <h4>JavaScript // GLSL // WebGL // THREE.JS</h4> */}
                     <h4><StyleWords words={['JavaScript', 'GLSL', 'WebGL', 'THREE.JS']}/></h4>
                     <p>
@@ -30,7 +34,9 @@ export default function Projects(){
                     <img src={wavesImage} alt='waves shader screenshot' className='project-image' />
                 </article>
                 <article>
-                    <h2>Interactive Particles Shader</h2>
+                    <h2><a href="https://sphere-particles-shader.vercel.app/" target={'_blank'}>
+                        Interactive Particles Shader
+                    </a></h2>
                     {/* <h4>JavaScript // GLSL // WebGL // THREE.JS</h4> */}
                     <h4><StyleWords words={['JavaScript', 'GLSL', 'WebGL', 'THREE.JS']}/></h4>
                     <p>
@@ -40,7 +46,9 @@ export default function Projects(){
                     <img src={particlesImage} alt='particles shader screenshot' className='project-image' />
                 </article>
                 <article>
-                    <h2>Game Item Guessing Quiz</h2>
+                    <h2><a href="https://isaac-item-guesser.vercel.app/" target={'_blank'}>
+                        Game Item Guessing Game
+                    </a></h2>
                     {/* <h4>React // JavaScript // Python</h4> */}
                     <h4><StyleWords words={['React', 'JavaScript', 'Python']}/></h4>
                     <p>

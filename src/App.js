@@ -9,6 +9,8 @@ import { Route, Routes, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Experience from "./canvas/Experience";
 
+// This is a comment from my macOS to determine if I can push changes from it
+
 
 export default function App(){
     const location = useLocation()

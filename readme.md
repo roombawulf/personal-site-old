@@ -1,3 +1,5 @@
 # Personal Site
 
-My [Personal site](hraza.dev). 
+Link: [hraza.dev](https://hraza.dev)
+
+**NOTE: I am remaking my site so this will be probably be never updated again.**

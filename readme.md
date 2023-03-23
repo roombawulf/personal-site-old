@@ -1,5 +1,3 @@
-# Personal Site
+# Personal Site (DEPRECATED)
 
-Link: [hraza.dev](https://hraza.dev)
-
-**NOTE: I am remaking my site so this will be probably be never updated again.**
+## NOTE: This repo is an older version of my site. I have left it here for reference.
